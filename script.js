@@ -1,4 +1,5 @@
 
+
 const pads = [...document.querySelectorAll(".pad")];
 const startBtn = document.getElementById("start");
 const message = document.getElementById("message");
