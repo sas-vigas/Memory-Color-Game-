@@ -1,0 +1,139 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: radial-gradient(circle at top, #252653, #090b15 70%);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.game {
+  width: 100%;
+  max-width: 430px;
+  padding: 28px;
+  text-align: center;
+  border-radius: 25px;
+  background: #15172a;
+  border: 1px solid #35395b;
+  box-shadow: 0 20px 70px #0008;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #a8afd0;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  padding: 13px 5px;
+  background: #232641;
+  border-radius: 12px;
+  color: #aeb5d9;
+  font-size: 11px;
+}
+
+.stat span {
+  display: block;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.pad {
+  aspect-ratio: 1;
+  border: 3px solid #ffffff20;
+  border-radius: 22px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: 0.15s;
+}
+
+.green { background: #00d99a; }
+.red { background: #ff4567; }
+.blue { background: #478bff; }
+.yellow { background: #ffd447; }
+
+.pad.active {
+  opacity: 1;
+  filter: brightness(1.5);
+  transform: scale(0.94);
+  box-shadow: 0 0 30px white;
+}
+
+.pad:disabled {
+  cursor: not-allowed;
+}
+
+#message {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c7cbea;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.start {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(100deg, #865cff, #438bff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.15);
+}
+
+.footer {
+  color: #7d84a7;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+@media (max-width: 380px) {
+  .game {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Color Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="game">
+    <h1>🧠 Memory Color</h1>
+    <p class="subtitle">Watch, remember and repeat!</p>
+
+    <div class="stats">
+      <div class="stat">LEVEL <span id="level">0</span></div>
+      <div class="stat">SCORE <span id="score">0</span></div>
+      <div class="stat">BEST <span id="best">0</span></div>
+    </div>
+
+    <div class="board">
+      <button class="pad green" data-color="0"
+        aria-label="Green" disabled></button>
+      <button class="pad red" data-color="1"
+        aria-label="Red" disabled></button>
+      <button class="pad blue" data-color="2"
+        aria-label="Blue" disabled></button>
+      <button class="pad yellow" data-color="3"
+        aria-label="Yellow" disabled></button>
+    </div>
+
+    <p id="message" aria-live="polite">Press START to play!</p>
+
+    <button id="start" class="start">▶ START GAME</button>
+
+    <p class="footer">✨ Beat your best score!</p>
+  </main>
+
+</body>
+</html>
